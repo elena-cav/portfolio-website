@@ -94,6 +94,7 @@ main {
     height: auto;
 }
 
+
 h2 {
     background-color: #457b9d;
     color: #EDE7E3; 
@@ -152,14 +153,6 @@ ul {
 
   }
 
-  #EC {
-      flex-grow: 1; 
-  } 
-
-  .menu {
-      justify-content: end;
-  }
-
   li a {
     color: #457b9d; 
     padding: 8px;
@@ -175,13 +168,35 @@ ul {
       
   }
 
-  .VRpic {
-      width: 200px; 
-      height: auto; 
+  #EC {
+    flex-grow: 1; 
+} 
+
+.menu {
+    justify-content: end;
+}
+
+.my-journey {
+    position:relative; 
+    font-family: 'Proza Libre', sans-serif; 
   }
+
+  .my {
+      display: inline-block; 
+      border-bottom: 3px solid #16697A;
+      padding: 5px; 
+  }
+
   
-  .my-journey {
-      position:relative; 
-      font-family: 'Proza Libre', sans-serif; 
+    .my-story {
+        font-family: 'Proza Libre', sans-serif; 
+        font-size: 20px; 
+
     }
-  
+
+    .VRpic {
+        width: 200px; 
+        height: auto;
+        float: left; 
+        padding-right: 30px; 
+    }
