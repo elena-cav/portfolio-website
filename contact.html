@@ -17,6 +17,37 @@
             <li class="menu"><a href="contact.html">Sai hi!</a></li>
         </ul>
     </nav>
+    <main>
+<div class = "contact">
+    <h1 class="letstalk">Let's talk!</h1>
+    <p class = "letsconnect">
+        I’d love to hear from you; whether you would like to know more about my experience, discuss a project or just want to say hello.
+        <br>
+        You can fill out the form on the left or get in touch with me at <a href=mailto:elenacavallero@outlook.com>elenacavallero@outlook.com</a>
+        </p>
+
+    <form class = contactForm method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <label for="extra">Your Message</label>
+    <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+    <br>
+    <button type="button" id="button" onclick="myFunction()">Connect with Elena</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("button");
+  x.disabled = false;
+}
+</script>
+
+        </form>
+    </div>
+</main>
 </body>
 
 </html>
