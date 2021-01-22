@@ -6,48 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./images/fontawesome-free-5.15.1-web/css/all.css" />;
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li id="EC"><a href="index.html">Elena Cavallero</a></li>
-            <li class="menu"><a href="myprojects.html">My work</a></li>
-            <li class="menu"><a href="about.html">About</a></li>
-            <li class="menu"><a href="contact.html">Sai hi!</a></li>
-        </ul>
-    </nav>
-    <main>
-<div class = "contact">
-    <h1>Let's talk!</h1>
-    <p class = "letsconnect">
+    <header>
+    
+        <span class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+        </span>
+    
+        <nav class="navbar" id="navbar">
+            <div class="navbar-header">
+                <span class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </span>
+                <ul class="nav-items">
+                    <li id="EC"><a href="index.html" class="nav-link">Elena Cavallero</a></li>
+                    <li class="menu"><a href="myprojects.html" class="nav-link">My work</a></li>
+                    <li class="menu"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="menu"><a href="contact.html" class="nav-link">Sai hi!</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    </header>
+    
+    <div class="section-center clearfix">
+        <div class = "contact">
+            <h1>Let's talk!</h1>
+            <p class = "letsconnect">
         I’d love to hear from you; whether you would like to know more about my experience, discuss a project or just want to say hello.
         <br>
-        You can fill out the form on the left or get in touch with me at <a href=mailto:elenacavallero@outlook.com>elenacavallero@outlook.com</a>
+        You can fill out the form below or get in touch with me at <a href=mailto:elenacavallero@outlook.com>elenacavallero@outlook.com</a>
         </p>
 
     <form class = contactForm action="https://formspree.io/f/xoqprqpg" method="POST">
+        <div class="contact-input-wrapper">
+
     <label for="name">Your Name</label>
     <input type="text" name="name" id="name">
     <br>
+    </div>
+    <div class="contact-input-wrapper">
     <label for="email">Your Email</label>
     <input type="email" name="email" id="email">
+    </div>
     <br>
+    <div class="contact-input-wrapper">
     <label for="extra">Your Message</label>
-    <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+    <textarea id="extra" name="extra" rows="3" ></textarea>
     <br>
-    <button type="button" id="button" onclick="myFunction()">Connect with Elena</button>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("button");
-  x.disabled = false;
-}
-</script>
+</div>
+    
+    <button value="Send" type="submit" class="contact-btn btn">Connect with Elena</button>
 
         </form>
     </div>
-</main>
+
+</div>
+    <script src="./app.js"></script>
+
 </body>
 
 </html>
