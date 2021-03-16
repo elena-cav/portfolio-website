@@ -471,7 +471,7 @@ li a:hover {
 
 
 
-/* home */
+/* about */
 
 .my-journey {
   position: relative;
@@ -486,7 +486,8 @@ li a:hover {
 
 .my-story {
   font-size: 20px;
-  width: 700px;
+  width: 100%;
+  letter-spacing: var(--spacing-secondary);
 }
 
 .VRpic {
@@ -495,6 +496,24 @@ li a:hover {
   float: left;
   padding-right: 30px;
   border-radius: var(--radius);
+}
+
+
+@media screen and (max-width: 900px) {
+
+.my-story {
+ font-size: 22px;
+  width: 100%;
+}
+}
+
+
+@media screen and (max-width: 700px) {
+
+.my-story {
+ font-size: 22px;
+  width: 100%;
+}
 }
 
 /* contact page */
