@@ -335,28 +335,37 @@ li a:hover {
 /* projects */
 
 .my-projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  justify-items: center;
+padding:20px;  justify-items: center;
   align-content: center;
 }
 
 .project {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  width: 300px;
   position: relative;
   transition: var(--transition);
   background-color: var(--clr-pink);
   border-radius: var(--radius); 
   border-top-right-radius: var(--radius);
+  margin: 10px 5px
 }
+
+  .project-content {
+  padding: 1em;
+  justify-content: center
+
+}
+
+
+
 
 .project:hover .background {
   opacity: 0.8;
   transform: scale(1.1);
   
 }
+
+
+
 
 .project:hover .arrow {
   transform: translateX(25%);
@@ -366,11 +375,6 @@ li a:hover {
    transform: translateX(10%);
 }
 
-.project-wrapper {
-  display: flex;
-  justify-content: space-around;
-  
-}
 
 .arrow {
   padding: 15px 5px 10px 10px; 
@@ -415,7 +419,7 @@ li a:hover {
 }
 
 .image-1 {
-  background-image: url("./images/1.jpg");
+  background-image: url("./images/goran-ivos-iOykDIkZLQw-unsplash.jpg");
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
 
@@ -452,22 +456,20 @@ li a:hover {
 
 
 
-@media screen and (max-width: 772px) {
 
-.my-projects {
-  grid-template-columns: repeat(1, 1fr);
+@media (min-width: 768px) {
+  .project-content,
+  .background-wrapper  {
+    width: 50%;
+  }
+
+  .project {
+    display: flex;
+  }
+  .background-wrapper {
+    height: auto;
+ }
 }
-}
-
-@media screen and (min-width: 1200px) {
-
-.my-projects {
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px; 
-}
-}
-
-
 
 
 
@@ -480,13 +482,13 @@ li a:hover {
 .my {
   display: inline-block;
   border-bottom: 3px solid var(--clr-primary);
-  border-
   padding: 5px;
 }
 
 .my-story {
   font-size: 20px;
   width: 100%;
+  max-width: 1000px; 
   letter-spacing: var(--spacing-secondary);
 }
 
