@@ -289,6 +289,8 @@ li a:hover {
 
 .intro {
   grid-area: 1 / 1 / 2 / 2;
+  line-height: 1.5em;
+  color: (var(--clr-grey-1));
 }
 
 .curious {
@@ -344,7 +346,7 @@ li a:hover {
   transition: var(--transition);
   background-color: var(--clr-pink);
   border-radius: var(--radius);
-  margin: 10px 5px;
+  margin: 20px 5px;
 }
 
 .project-content {
@@ -506,8 +508,8 @@ li a:hover {
   width: 250px;
   height: auto;
   float: left;
-  padding-right: 30px;
   border-radius: var(--radius);
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 900px) {
