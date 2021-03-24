@@ -2,7 +2,7 @@
 const navBtn = document.getElementById('nav-btn');
 const navbar = document.getElementById('navbar');
 const navClose = document.getElementById('nav-close');
-const footerYear = document.getElementsByClassName('year');
+
 // show nav
 navBtn.addEventListener('click', () => {
   navbar.classList.add('showNav');
@@ -11,5 +11,3 @@ navBtn.addEventListener('click', () => {
 navClose.addEventListener('click', () => {
   navbar.classList.remove('showNav');
 });
-
-footerYear.innerText = new Date().getFullYear();
