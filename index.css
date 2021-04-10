@@ -380,6 +380,7 @@ li a:hover {
 .project:hover .background {
   opacity: 0.8;
   transform: scale(1.1);
+  cursor: auto;
 }
 
 .project:hover .arrow {
@@ -398,33 +399,22 @@ li a:hover {
   margin-top: 2rem;
   justify-self: center;
 }
-.languages {
+.proj-list {
   list-style-type: none;
 }
 
-.languages li {
+.proj-list li {
   display: flex;
   padding-right: 0;
   padding-left: 0;
 }
-.languages li::before {
+.proj-list li::before {
   content: '';
   background: url('./images/fontawesome-free-5.15.1-web/svgs/solid/caret-right.svg')
     no-repeat center center;
   display: block;
   height: 1.5em;
   width: 1.5em;
-}
-
-.project a {
-  position: absolute;
-  text-indent: 110%;
-  white-space: nowrap;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .background-wrapper {
@@ -444,18 +434,29 @@ li a:hover {
 }
 
 .image-1 {
-  background-image: url('./images/goran-ivos-iOykDIkZLQw-unsplash.jpg');
+  background-image: url('./images/code.jpg');
 }
 
 .image-2 {
-  background-image: url('./images/pawel-czerwinski-RkIsyD_AVvc-unsplash.jpg');
+  background: url('./images/nc-news.png') no-repeat center center;
+  background-size: cover;
+}
+
+@media (min-width: 770px) {
+  .image-2 {
+    background-size: contain;
+  }
 }
 
 .image-3 {
-  background-image: url('./images/fe.jpg');
+  background-image: url('./images/pawel-czerwinski-RkIsyD_AVvc-unsplash.jpg');
 }
 
 .image-4 {
+  background-image: url('./images/fe.jpg');
+}
+
+.image-5 {
   background-image: url('./images/jeff-sheldon-6MT4_Ut8a3Y-unsplash.jpg');
 }
 
@@ -484,7 +485,7 @@ li a:hover {
   .project-title {
     display: inline-block;
   }
-  .languages {
+  .proj-list {
     column-count: 2;
   }
 }
