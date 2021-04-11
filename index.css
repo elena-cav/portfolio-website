@@ -403,6 +403,10 @@ li a:hover {
   list-style-type: none;
 }
 
+.links {
+  margin-top: 1rem;
+}
+
 .proj-list li {
   display: flex;
   padding-right: 0;
@@ -484,9 +488,6 @@ li a:hover {
 
   .project-title {
     display: inline-block;
-  }
-  .proj-list {
-    column-count: 2;
   }
 }
 
