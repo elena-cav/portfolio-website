@@ -463,6 +463,16 @@ li a:hover {
 .image-5 {
   background-image: url('./images/jeff-sheldon-6MT4_Ut8a3Y-unsplash.jpg');
 }
+.image-6 {
+  background: url('./images/Bloggo.png') no-repeat center center;
+  background-size: cover;
+}
+
+@media (min-width: 770px) {
+  .image-6 {
+    background-size: contain;
+  }
+}
 
 .other-image-1 {
   background-image: url('./images/Sofar.jpg');
