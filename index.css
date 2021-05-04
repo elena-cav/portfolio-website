@@ -341,16 +341,20 @@ li a:hover {
 }
 
 .headshot {
+  width: 60%;
   position: relative;
   border-radius: var(--radius);
 }
 
 @media screen and (max-width: 700px) {
   .headshot-wrapper::before {
-    width: 50%;
-    height: 30%;
+    width: 40%;
+    height: 25%;
     position: absolute;
     margin: 2em;
+  }
+  .intro {
+    font-size: 1rem;
   }
 }
 
@@ -555,8 +559,11 @@ li a:hover {
 
 @media screen and (max-width: 700px) {
   .my-story {
-    font-size: 22px;
+    font-size: 18px;
     width: 100%;
+  }
+  .VRpic {
+    margin-bottom: 2rem;
   }
 }
 
