@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Proza+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 *,
 *::before,
@@ -16,8 +16,8 @@
   --clr-grey-10: #f1f5f8;
   --clr-pink: #ffe8dc;
   --clr-white: #fff;
-  --ff-primary: 'Proza Libre', sans-serif;
-  --ff-secondary: 'Cormorant', cursive;
+  --ff-primary: "Proza Libre", sans-serif;
+  --ff-secondary: "Cormorant", cursive;
   --transition: all 0.3s linear;
   --spacing: 0.15rem;
   --spacing-secondary: 0.05rem;
@@ -91,7 +91,7 @@ p {
 
 .clearfix::after,
 .clearfix::before {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
@@ -306,7 +306,7 @@ li a:hover {
 }
 
 .hplink::after {
-  content: '';
+  content: "";
   background: var(--clr-pink);
   position: absolute;
   left: 12px;
@@ -331,7 +331,7 @@ li a:hover {
 }
 
 .headshot-wrapper::before {
-  content: '';
+  content: "";
   background-color: var(--clr-pink);
   width: 37%;
   height: 50%;
@@ -417,8 +417,8 @@ li a:hover {
   padding-left: 0;
 }
 .proj-list li::before {
-  content: '';
-  background: url('./images/fontawesome-free-5.15.1-web/svgs/solid/caret-right.svg')
+  content: "";
+  background: url("./images/fontawesome-free-5.15.1-web/svgs/solid/caret-right.svg")
     no-repeat center center;
   display: block;
   height: 1.5em;
@@ -442,11 +442,15 @@ li a:hover {
 }
 
 .image-1 {
-  background-image: url('./images/code.jpg');
+  background-image: url("./images/code.jpg");
+}
+
+.image-7 {
+  background-image: url("./images/nucleus.png");
 }
 
 .image-2 {
-  background: url('./images/nc-news.png') no-repeat center center;
+  background: url("./images/nc-news.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -457,18 +461,18 @@ li a:hover {
 }
 
 .image-3 {
-  background-image: url('./images/pawel-czerwinski-RkIsyD_AVvc-unsplash.jpg');
+  background-image: url("./images/pawel-czerwinski-RkIsyD_AVvc-unsplash.jpg");
 }
 
 .image-4 {
-  background-image: url('./images/fe.jpg');
+  background-image: url("./images/fe.jpg");
 }
 
 .image-5 {
-  background-image: url('./images/jeff-sheldon-6MT4_Ut8a3Y-unsplash.jpg');
+  background-image: url("./images/jeff-sheldon-6MT4_Ut8a3Y-unsplash.jpg");
 }
 .image-6 {
-  background: url('./images/Bloggo.png') no-repeat center center;
+  background: url("./images/Bloggo.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -479,11 +483,11 @@ li a:hover {
 }
 
 .other-image-1 {
-  background-image: url('./images/Sofar.jpg');
+  background-image: url("./images/Sofar.jpg");
 }
 
 .other-image-2 {
-  background-image: url('./images/XTRAX.png');
+  background-image: url("./images/XTRAX.png");
 }
 
 @media (min-width: 480px) {
